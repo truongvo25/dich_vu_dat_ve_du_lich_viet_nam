@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt vé du lịch đến Phú Quốc</title>
+    <style>
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .logo {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+            width: 60px;
+            height: auto;
+        }
+        body {
+            margin-top: 60px; /* Adjust this value based on the height of your header */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("https://saigontourist.net/uploads/destination/TrongNuoc/Phuquoc/Phu-Quoc-Island_1093686134.jpg");
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .info {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+        .info h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .info p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        .info .details {
+            font-size: 14px;
+            color: #666;
+        }
+        .image {
+            flex: 1;
+        }
+        .image img {
+            max-width: 100%;
+            border-radius: 20px;
+            border: 4px solid orange;
+        }
+        .btn{
+            text-decoration: none;
+            color: white;
+            background-color: #e67e22;
+            padding: 15px 30px;
+            border-radius: 20px;
+            margin: 0 5px;
+            width: 190px;
+            display: inline-block;
+            text-align: center;
+            transition: all .3s;
+        }
+        .more-content {
+            display: none;
+        }
+        .show-more {
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="https://png.pngtree.com/png-vector/20190129/ourlarge/pngtree-home-icon-graphic-design-template-vector-png-image_358126.jpg" alt="Logo" class="logo">
+        </a>
+    </header>
+    <div class="container">
+        <div class="info">
+            <h1>Phú Quốc</h1>
+            <p>
+                Nằm tại địa phận tỉnh Kiên Giang, Phú Quốc đích thị là thiên đường Đảo Ngọc với những dải cát trắng và làn nước trong xanh. Nếu bạn muốn tìm một điểm du lịch biển đảo thì nơi đây chắc chắn là điểm đến hoàn hảo cho bạn. Có nhiều phương tiện di chuyển ra Phú Quốc bao gồm cả máy bay lẫn tàu cao tốc Phú Quốc Express, tuỳ theo sự lựa chọn của bạn. Hãy dành thời gian dưới ánh mặt trời tại Bãi Sao hoặc ghé đến các hòn đảo nằm ở phía nam Phú Quốc để thỏa thích bơi lặn. Thậm chí, bạn có thể câu cá hay câu mực cho bữa tối của mình ở đây!<br> <br>
+                Nếu bạn là một người yêu động vật, hãy ghé đến Vinpearl Safari và trải nghiệm vườn thú mở đầu tiên và duy nhất của Việt Nam! Trải nghiệm tại Vinpearl Safari còn đưa bạn đi dọc theo những con đường rợp bóng cây và gặp gỡ nhiều loài động vật hoang dã khác nhau như voi, hươu cao cổ và thậm chí cả hổ nữa!  <br> <br>
+            <div class="details">
+                <p><strong>Thời gian tuyệt nhất để đến:</strong> Tháng 1 (Lễ hội âm nhạc Epizode Việt Nam)</p>
+                <p><strong>Thời lượng lý tưởng:</strong> 3 ngày</p>
+            </div>
+            <a href="https://www.klook.com/vi/city/130-phu-quoc-things-to-do/?spm=Country.TopDestination_City_LIST&clickId=8adffbeac3" class="btn">Đặt vé ngay</a>
+        </div>
+        <div class="image">
+            <img src="https://ik.imagekit.io/tvlk/blog/2022/12/bac-dao-phu-quoc-9-1024x574.jpeg?tr=dpr-2,w-675">
+        </div>
+    </div>
+    <script>
+        document.querySelector('.show-more').addEventListener('click', function() {
+            const moreContent = document.querySelector('.more-content');
+            if (moreContent.style.display === 'none') {
+                moreContent.style.display = 'inline';
+                this.textContent = 'Thu gọn';
+            } else {
+                moreContent.style.display = 'none';
+                this.textContent = 'Xem thêm';
+            }
+        });
+    </script>
+</body>
+</html>
