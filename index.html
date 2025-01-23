@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lora&family=Merriweather&family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Dịch vụ đặt vé du lịch Việt Nam</title>
+    <link rel="stylesheet" href="grid.css">
+    <style>
+        html {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("https://live.staticflickr.com/1871/44305921171_aec7ce2442_b.jpg");
+            background-size: cover;
+        }
+        .sticky{
+            background-color: antiquewhite;
+            top: 0;
+            left: 0;
+        }
+        .sticky .logo{
+            width: 150px;
+        }
+        a {
+            color: floralwhite;
+            font-size: 20px;
+        }
+        header {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lora', serif;
+        }
+        h1 {
+            font-family: 'Lora', serif;
+            text-align: center;
+            color: whitesmoke;
+            font-size: 100px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .content {
+            text-align: center;
+            color: white;
+        }
+        .about-picture img{
+            width: 90%;
+            border-radius: 20px;
+            border: 4px solid orange;
+            box-shadow: 0px 5px 15px 5px orange;
+            transition: all .7s;
+        }
+
+        .picture-title{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: #c2e1fd;
+            transform: translate(-65%,100%);
+            opacity: 0;
+            transition: all .7s;
+        }
+
+        .about-picture{
+            position: relative;
+            margin-top: 50px;
+        }
+
+        .about-picture:hover img,
+        .about-picture:active img{
+            filter: brightness(55%) blur(2px);
+        }
+
+        .about-picture:hover .picture-title,
+        .about-picture:active .picture-title{
+            transform: translate(-65%, -50%);
+            opacity: 1;
+        }
+        .row{
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        video{
+            margin-top: 50px;
+            display: inline-flex;
+            margin-left: 10px;
+        }
+
+        #intro-viet-1{
+            text-align: left;
+            margin-top: 20px;
+            letter-spacing: 1px;
+            font-size: 20px;
+            color: whitesmoke;
+            border-left: 10px;
+        }
+        #intro-viet-2{
+            text-align: left;
+            margin-top: 20px;
+            letter-spacing: 1px;
+            font-size: 20px;
+            color: whitesmoke;
+            border-right: 10px;
+        }
+        .clearfix::after{
+            content:" ";
+            display: table;
+            clear: both;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .destination {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: rgba(230,126,34,0.5);
+            border: 2px solid orange;
+        }
+        .destination img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .destination .label {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .destination:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body style="margin: 0 0 0 0;">
+    <nav class="sticky">
+        <img class="logo" src="2022-klook-new-logo-design-removebg-preview.png" alt="logo">
+    </nav>
+    <header>
+        <div class="content">
+            <h2>TẠO NÊN NHỮNG KHOẢNH KHẮC ĐÁNG NHỜ CÙNG KLOOK TRÊN MẢNH ĐẤT</h2>
+            <h1 style="margin-top: 15px">VIỆT NAM</h1>
+            <a href="https://www.klook.com/vi/?spm=Country.TopNavigation.BackHome&clickId=57195f6667">Khám phá các đất nước khác cùng Klook tại đây</a>
+        </div>
+    </header>
+    <p style="text-align: center;color: orange;">***************************************************************************************************************</p>
+        <section class="vietnam" id="vnam">
+            <div class="row">
+                <video class="col span-1-of-2" controls src="Vietnam - From Above.mp4" type="vdeo/mp4"></video>
+                <div class="col span-1-of-2" id="intro-viet-1">
+                Việt Nam, một viên ngọc quý của Đông Nam Á, là đất nước nổi tiếng với vẻ đẹp thiên nhiên quyến rũ, di sản văn hóa phong phú và lòng hiếu khách nồng hậu của người dân. Chúng ta sẽ tìm hiểu những điều kỳ diệu của du lịch Việt Nam bằng cách khám phá những cảnh quan tuyệt đẹp, hệ sinh thái đa dạng và những bãi biển ngoạn mục, khám phá di sản văn hóa phong phú của đất nước thông qua các địa danh lịch sử, lễ hội truyền thống và ẩm thực độc đáo cùng với đó là lòng hiếu khách và sự nồng hậu của người dân Việt Nam thông qua bản chất thân thiện, cuộc sống đường phố sôi động và các sáng kiến du lịch dựa vào cộng đồng.
+                </div>
+                <div class="clearfix"></div>
+                <br> <br>
+                <div class="introviet" id="intro-viet-2">
+                Vẻ đẹp tự nhiên của Việt Nam sẽ phải khiến du khách ngạc nhiên, mang đến cho du khách cái nhìn thoáng qua về những cảnh quan đa dạng trải dài từ ruộng bậc thang xanh tươi đến những bãi biển hoang sơ. Vịnh Hạ Long, Di sản Thế giới được UNESCO công nhận, nổi tiếng với làn nước màu ngọc lục bảo và những hòn đảo đá vôi cao chót vót, tạo nên cảnh biển ngoạn mục. Tương tự, ruộng bậc thang Sapa ở vùng cao phía Bắc thể hiện sự khéo léo của những người nông dân địa phương đã điêu khắc những sườn đồi thành những hoa văn đầy mê hoặc. Hơn nữa, Vườn quốc gia Phong Nha-Kẻ Bàng tự hào có mạng lưới hang động và sông ngầm, mang đến trải nghiệm phiêu lưu độc đáo cho những người đam mê thiên nhiên. Ngoài những cảnh quan tuyệt đẹp này, Việt Nam còn là nơi có các hệ sinh thái đa dạng như Đồng bằng sông Cửu Long, Vườn quốc gia Cát Tiên và Quần đảo Côn Đảo, mỗi hệ sinh thái đều mang đến cái nhìn thoáng qua về đa dạng sinh học phong phú của đất nước. Đường bờ biển của đất nước cũng được tô điểm bởi những bãi biển đẹp như tranh vẽ như Bãi biển Mỹ Khê, Bãi biển Nha Trang và Đảo Phú Quốc, mời gọi du khách đến thư giãn trong khung cảnh hoang sơ xung quanh. <br> <br> <br>
+                <div class="row">
+                    <div class="col span-1-of-3 about-picture">
+                        <img src="R (1).jpg" alt="activities1">
+                        <p class="picture-title">
+                            Sapa
+                        </p>
+                    </div>
+                    <div class="col span-1-of-3 about-picture">
+                        <img src="2838589-cave-hang-son-doong-huge-sun-rays-rock-grass-nature-landscape-vietnam___landscape-nature-w.jpg" alt="activities1">
+                        <p class="picture-title">
+                            Sơn Đoòng
+                        </p>
+                    </div>
+                    <div class="col span-1-of-3 about-picture">
+                        <img src="Cầu-Hôn-Kiss-Bridge-Phú-Quốc-112-scaled.jpg" alt="activities1">
+                        <p class="picture-title">
+                            Phú Quốc
+                        </p>
+                    </div>
+                </div>
+                <br> <br>
+                Di sản văn hóa phong phú của Việt Nam có nguồn gốc sâu xa từ các địa danh lịch sử, lễ hội truyền thống và ẩm thực độc đáo. Hoàng thành Thăng Long ở Hà Nội là minh chứng cho quá khứ xa xưa của đất nước, trong khi Phố cổ Hội An mê hoặc du khách với kiến trúc được bảo tồn tốt và những con phố rực rỡ ánh đèn lồng. Lăng Chủ tịch Hồ Chí Minh tại Hà Nội tưởng nhớ vị lãnh tụ đáng kính của phong trào độc lập tại Việt Nam. Hơn nữa, các lễ hội truyền thống của Việt Nam như Tết Nguyên Đán, Tết Trung Thu và Lễ hội Huế, mang đến cái nhìn thoáng qua về truyền thống văn hóa sôi động của đất nước. Ẩm thực Việt Nam cũng là một điểm nổi bật trong di sản văn hóa của đất nước, với các món ăn như Phở, Bánh xèo (bánh xèo nóng hổi) và Bún Chả (thịt lợn nướng với mì) kích thích vị giác và phản ánh sự đa dạng về ẩm thực của đất nước. <br> <br> <br>
+                <div class="col span-1-of-1 about-picture">
+                    <img src="OIP (1).jpg" alt="activities1">
+                    <p class="picture-title">
+                        Ẩm thực
+                    </p>
+                </div>
+                Sự hiếu khách và nồng hậu của người dân Việt Nam đóng một vai trò quan trọng trong việc định hình cảnh quan du lịch đất nước. Nổi tiếng với sự thân thiện và hiếu khách, người dân địa phương ở Việt Nam thường nỗ lực hết mình để hỗ trợ và thu hút khách du lịch. Cuộc sống đường phố sôi động ở các thành phố như Hà Nội và Thành phố Hồ Chí Minh là minh chứng cho nền văn hóa sống động của Việt Nam, với những khu chợ nhộn nhịp, những quán ăn đường phố và những buổi biểu diễn truyền thống làm tăng thêm nét quyến rũ của đường phố. Hơn nữa, các sáng kiến du lịch dựa vào cộng đồng của Việt Nam như nhà dân, lớp học nấu ăn và giao lưu văn hóa mang đến cho du khách cơ hội đặc biệt để hòa mình vào cuộc sống hàng ngày của cộng đồng địa phương và hiểu biết sâu sắc hơn về văn hóa Việt Nam. <br> <br> <br>
+                Tóm lại, ngành du lịch Việt Nam phát triển mạnh nhờ vẻ đẹp thiên nhiên, di sản văn hóa phong phú và lòng hiếu khách nồng hậu của người dân. Từ cảnh quan tuyệt đẹp và hệ sinh thái đa dạng đến các địa danh lịch sử và lễ hội truyền thống, Việt Nam mang đến vô số trải nghiệm cho du khách muốn khám phá điểm đến đầy mê hoặc này. Bản chất hiếu khách của người dân Việt Nam, cuộc sống đường phố sôi động và các sáng kiến du lịch dựa vào cộng đồng càng nâng cao sức hấp dẫn tổng thể của Việt Nam như một điểm đến du lịch hàng đầu ở Đông Nam Á. <br> <br> <br>
+                </div>
+            </div>
+        </section>
+    <p style="text-align: center;color: orange;">***************************************************************************************************************</p>
+    <div>
+        <h1 style="font-size: 60px;">Đặt vé đến địa điểm muốn đến dưới đây</h1>
+        <div class="container">
+            <a href="tphcm.html" class="destination">
+                <img src="https://nhaf.net.vn/wp-content/uploads/2022/03/thanh-pho-ho-chi-minh-scaled.jpg" alt="TPHCM">
+                <div class="label">TP Hồ Chí Minh</div>
+            </a>
+            <a href="danang.html" class="destination">
+                <img src="https://th.bing.com/th/id/OIP.3c1HosHJeopzkW5CpM266wHaE8?rs=1&pid=ImgDetMain" alt="Đà Nẵng">
+                <div class="label">Đà Nẵng</div>
+            </a>
+            <a href="hanoi.html" class="destination">
+                <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/8/23/1084256/295497942_2922294937.jpg" alt="Hà Nội">
+                <div class="label">Hà Nội</div>
+            </a>
+            <a href="halong.html" class="destination">
+                <img src="https://th.bing.com/th/id/OIP.rdklJoVVznM711JkXIFwxAHaE8?rs=1&pid=ImgDetMain" alt="Hạ Long">
+                <div class="label">Hạ Long</div>
+            </a>
+            <a href="hoian.html" class="destination">
+                <img src="https://cdn.tourradar.com/s3/tour/1500x800/177451_8383188e.jpg" alt="Hội An">
+                <div class="label">Hội An</div>
+            </a>
+        </div> <br>
+        <div class="container">
+            <a href="nhatrang.html" class="destination">
+                <img src="https://www.orangesmile.com/common/img_cities_original/nha-trang--3723998-7.jpg" alt="Nha Trang">
+                <div class="label">Nha Trang</div>
+            </a>
+            <a href="phuquoc.html" class="destination">
+                <img src="https://static-images.vnncdn.net/files/publish/2022/10/22/phu-quoc-2-1059.jpg" alt="Phú Quốc">
+                <div class="label">Phú Quốc</div>
+            </a>
+            <a href="dalat.html" class="destination">
+                <img src="https://th.bing.com/th/id/OIP.nnzCfrV9RlE8g3g5K8zKVAHaFf?rs=1&pid=ImgDetMain" alt="Đà Lạt">
+                <div class="label">Đà Lạt</div>
+            </a>
+            <a href="sapa.html" class="destination">
+                <img src="https://th.bing.com/th/id/R.47c0c14e5438d03269f0ff4c75ebf714?rik=PlwSDMqmJbqlIg&riu=http%3a%2f%2fdivui.com%2fblog%2fwp-content%2fuploads%2f2018%2f10%2fsapa.jpg&ehk=y0OJS2JfmjFBr5qa5epMfhbNJ2jyauxZWqAb34%2flR8Y%3d&risl=&pid=ImgRaw&r=0" alt="Sapa">
+                <div class="label">Sapa</div>
+            </a>
+            <a href="hue.html" class="destination">
+                <img src="https://photo-baomoi.bmcdn.me/w700_r1/2025_01_22_197_51313736/6a98e124256bcc35957a.jpg" alt="Huế">
+                <div class="label">Huế</div>
+            </a>
+        </div> <br>
+        <div class="container">
+            <a href="muine-phanthiet.html" class="destination">
+                <img src="https://1.bp.blogspot.com/-jEgMPQe-EBQ/XGekq2zPUDI/AAAAAAAAdYU/GS2H-bODl3AEcMzIMIiGSZqb7EP5coVlQCLcBGAs/s1600/Dia-diem-du-lich-Phan-Thiet-Mui-Ne-Binh-Thuan-32.jpg" alt="Mũi Né - Phan Thiết">
+                <div class="label">Mũi Né - Phan Thiết</div>
+            </a>
+            <a href="quynhon.html" class="destination">
+                <img src="https://alotravel.vn/source/tintuc/tp-quy-nhon_4.png" alt="Quy Nhơn">
+                <div class="label">Quy Nhơn</div>
+            </a>
+            <a href="donghoi-quangbinh.html" class="destination">
+                <img src="https://tripzone.vn/uploads/202105/18/04/111706-hang-son-doong-0.jpg" alt="ĐH - Quảng Bình">
+                <div class="label">Đồng Hới - Quảng Bình</div>
+            </a>
+            <a href="vungtau.html" class="destination">
+                <img src="https://static.vinwonders.com/production/Things-to-do-in-Vung-Tau-banner.jpeg" alt="VũngTàu">
+                <div class="label">Vũng Tàu</div>
+            </a>
+            <a href="cantho-dbscl.html" class="destination">
+                <img src="https://haycafe.vn/wp-content/uploads/2022/12/hinh-anh-que-huong-mien-tay-lam-hinh-nen.jpeg" alt="Cần Thơ - ĐB Sông Cửu Long">
+                <div class="label">Cần Thơ - ĐB Sông Cửu Long</div>
+            </a>
+        </div> <br>
+        <br><br><br><br>
+</body>
+</html>
