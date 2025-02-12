@@ -9,6 +9,9 @@
     <title>Dịch vụ đặt vé du lịch Việt Nam</title>
     <link rel="stylesheet" href="grid.css">
     <style>
+        .update{
+            background-color: white;
+        }
         body {
             padding: 0;
             margin: 0;
@@ -270,5 +273,23 @@
   gtag('js', new Date());
   gtag('config', 'G-9K7BMR1413');  
 </script>
+<div id="update"> 
+    <h2>Số lượt truy cập:</h2>
+    <p id="pageviews">Đang tải...</p>
+
+    <script>
+        async function fetchAnalytics() {
+            try {
+                const response = await fetch(`https://www.googleapis.com/analytics/v3/data/ga?ids=ga:YOUR_VIEW_ID&metrics=ga:pageviews&access_token=YOUR_ACCESS_TOKEN`);
+                const data = await response.json();
+                document.getElementById("pageviews").innerText = data.totalsForAllResults["ga:pageviews"];
+            } catch (error) {
+                console.error("Lỗi tải dữ liệu Google Analytics", error);
+            }
+        }
+
+        fetchAnalytics();
+    </script>
+</div>
 </body>
 </html>
