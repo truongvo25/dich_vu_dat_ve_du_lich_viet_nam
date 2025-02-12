@@ -259,5 +259,43 @@
             </a>
         </div> <br>
         <br><br><br><br>
+<div>
+    <h2>Lượt truy cập từ Google Search:</h2>
+    <p id="clicks">Đang tải...</p>
+
+    <script>
+        async function fetchGSCData() {
+            const API_KEY = 'YOUR_API_KEY'; // Thay thế bằng API Key của bạn
+            const url = `https://www.googleapis.com/webmasters/v3/sites/https%3A%2F%2Fyourwebsite.com/searchAnalytics/query?key=${API_KEY}`;
+
+            const requestBody = {
+                startDate: "2024-01-01",
+                endDate: "2024-02-01",
+                dimensions: ["date"]
+            };
+
+            try {
+                const response = await fetch(url, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(requestBody)
+                });
+                const data = await response.json();
+                
+                // Lấy tổng số lượt nhấp
+                let totalClicks = data.rows.reduce((sum, row) => sum + row.clicks, 0);
+                
+                document.getElementById("clicks").textContent = totalClicks;
+            } catch (error) {
+                console.error("Lỗi khi lấy dữ liệu từ GSC:", error);
+                document.getElementById("clicks").textContent = "Không thể tải dữ liệu";
+            }
+        }
+
+        fetchGSCData();
+    </script>
+</div>
 </body>
 </html>
