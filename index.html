@@ -157,6 +157,11 @@
         .destination:hover {
             transform: translateY(-5px);
         }
+        .contact {
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
     </style>
 </head>
 <body style="margin: 0 0 0 0;">
@@ -181,7 +186,7 @@
             <li><a href="#vnam"></i>Tổng quan</a></li>
             <li><a href="#datve"></i>Đặt vé</a></li>
             <li><a href="#danhgia"></i>Đánh giá</a></li>
-            <li><a href=""></i>Liên hệ</a></li>
+            <li><a href="#lienhe"></i>Liên hệ</a></li>
         </ul>
     </nav>
     <header>
@@ -335,7 +340,7 @@
                 <p>Thật khó quên.</p>
             </div>
             <div style="text-align: center">
-            <h2>Đánh giá của người dùng</h2>
+            <h2>Gửi đánh giá của bạn</h2>
             <div class="review-form">
             <label for="username">Tên:</label>
             <input type="text" id="username" placeholder="Nhập tên của bạn">
@@ -344,7 +349,7 @@
             <textarea id="review" rows="4" placeholder="Nhập đánh giá của bạn"></textarea>
             <br><br>
             <button onclick="addReview()">Gửi đánh giá</button>
-            </div>
+            </div></div>
             <ul class="review-list" id="reviewList"></ul>
 
             <script>
@@ -366,7 +371,26 @@
                 alert('Vui lòng nhập tên và đánh giá của bạn.');
             }
         }
-        </script></div>
+        </script>
         </section>
+      <p style="text-align: center;color: orange;">***************************************************************************************************************</p>
+    <section id="lienhe">
+        <div class="contact">
+            <div class="col span-1-of-3">
+                <ul class="information">
+                    <li><i class="fas fa-map-marker-alt small small-icon"></i>Địa chỉ: 69 Hùng Vương, TP Huế, Việt Nam</li>
+                    <li><i class="fas fa-envelope small-icon"></i>Email: vietnamtourservice@gmail.com</li>
+                    <li><i class="fas fa-phone small-icon"></i>SĐT: 1800 3475</li>
+                </ul>
+                <ul class="social-icons">
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-twitter-square"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-google-plus-square"></i></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-3"></div>
+        </div>
+    </section>
 </body>
 </html>
