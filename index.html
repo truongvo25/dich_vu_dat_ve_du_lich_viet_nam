@@ -12,6 +12,11 @@
         .update{
             background-color: white;
         }
+        .reviews { background-color: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); width: 1000px; margin: 20px auto;}
+        .review-item { margin-bottom: 1.5rem; }
+        .review-item h4 { color: #2a9d8f; margin-bottom: 0.5rem; }
+        .review-item p { margin-bottom: 0.5rem; }
+        .stars { color: #ffd700; }
         body {
             padding: 0;
             margin: 0;
@@ -167,7 +172,13 @@
             })();</script>
             <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4928628&101" alt="" border="0"></a></noscript>
             <!-- Histats.com  END  -->     
-            </div>
+        </div>
+        <ul>
+            <li><a href="#vnam"></i>Tổng quan</a></li>
+            <li><a href="#datve"></i>Đặt vé</a></li>
+            <li><a href=".reviews"></i>Đánh giá</a></li>
+            <li><a href=".lienhe"></i>Liên hệ</a></li>
+        </ul>
     </nav>
     <header>
         <div class="content">
@@ -212,7 +223,7 @@
             </div>
         </section>
     <p style="text-align: center;color: orange;">***************************************************************************************************************</p>
-    <div>
+    <div id="datve">
         <h1 style="font-size: 60px;">Đặt vé đến địa điểm muốn đến dưới đây</h1>
         <div class="container">
             <a href="tphcm.html" class="destination">
@@ -281,5 +292,44 @@
             </a>
         </div> <br>
         <br><br><br><br>
+    <p style="text-align: center;color: orange;">***************************************************************************************************************</p>
+        <section class="reviews">
+            <h2>Đánh giá từ người dùng nổi bật</h2> <br>
+            <div class="review-item">
+                <h4>Nguyễn Trung Dũng - Hà Nội</h4>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>Dịch vụ rất chu đáo, đúng như lời giới thiệu trên web.</p>
+            </div>
+            <div class="review-item">
+                <h4>Hoàng Tâm Như - Đà Nẵng</h4>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>Hi vọng lần sau sẽ có cơ hội trải nghiệm thêm nhiều điểm đến cùng Klook.</p>
+            </div>
+            <div class="review-item">
+                <h4>Trương Quang Tú - Hà Nội</h4>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>Không gì ngoài từ "Tuyệt vời" đề nói về trải nghiệm cùng Klook.</p>
+            </div>
+            <div class="review-item">
+                <h4>Phạm Thị Hà - Quảng Ninh</h4>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>Chắc chắn tôi sẽ giới thiệu cho bạn bè và người thân.</p>
+            </div>
+            <div class="review-item">
+                <h4>Hoàng Văn Quốc - Thành phố Hồ Chí Minh</h4>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>Thật khó quên.</p>
+            </div>
+        </section>
 </body>
 </html>
