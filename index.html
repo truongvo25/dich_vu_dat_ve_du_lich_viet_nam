@@ -334,6 +334,38 @@
                 </div>
                 <p>Thật khó quên.</p>
             </div>
+            <h2>Đánh giá của người dùng</h2>
+            <div class="review-form">
+            <label for="username">Tên:</label>
+            <input type="text" id="username" placeholder="Nhập tên của bạn">
+            <br><br>
+            <label for="review">Đánh giá:</label>
+            <textarea id="review" rows="4" placeholder="Nhập đánh giá của bạn"></textarea>
+            <br><br>
+            <button onclick="addReview()">Gửi đánh giá</button>
+            </div>
+            <ul class="review-list" id="reviewList"></ul>
+
+            <script>
+            function addReview() {
+            const username = document.getElementById('username').value;
+            const review = document.getElementById('review').value;
+
+            if (username && review) {
+                const reviewList = document.getElementById('reviewList');
+                const reviewItem = document.createElement('li');
+                reviewItem.classList.add('review-item');
+                reviewItem.innerHTML = `<strong>${username}</strong><p>${review}</p>`;
+                reviewList.appendChild(reviewItem);
+
+                // Clear the input fields
+                document.getElementById('username').value = '';
+                document.getElementById('review').value = '';
+            } else {
+                alert('Vui lòng nhập tên và đánh giá của bạn.');
+            }
+        }
+        </script>
         </section>
 </body>
 </html>
