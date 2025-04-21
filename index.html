@@ -9,6 +9,26 @@
     <title>Dịch vụ đặt vé du lịch Việt Nam</title>
     <link rel="stylesheet" href="grid.css">
     <style>
+.searching {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#search-box {
+    padding: 12px;
+    width: 300px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+#search-box:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.hidden {
+    display: none;
+}
         .member img {
             width: 100px;
             height: 100px;
@@ -265,6 +285,9 @@ nav ul li:hover::before {
     <p style="text-align: center;color: orange;">***************************************************************************************************************</p>
     <div id="datve"> <br><br><br>
         <h1 style="font-size: 50px;color: white;text-shadow: 2px 2px 4px whitesmoke;">Đặt vé đến địa điểm muốn đến dưới đây</h1>
+    <div class="searching">
+        <input type="text" id="search-box" placeholder="Nhập tên địa điểm muốn đến..." onkeyup="searchItems()">
+    </div>
         <div class="container">
             <a href="tphcm.html" class="destination">
                 <img src="https://nhaf.net.vn/wp-content/uploads/2022/03/thanh-pho-ho-chi-minh-scaled.jpg" alt="TPHCM">
@@ -332,6 +355,34 @@ nav ul li:hover::before {
             </a>
         </div> <br>
     <script>
+document.getElementById('search-box').addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        searchDestinations();
+    }
+});
+function removeAccents(str) {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
+function searchDestinations() {
+    let input = removeAccents(document.getElementById('search-box').value.toLowerCase().trim());
+    let destinations = document.querySelectorAll('.destination');
+    let found = false;
+
+    destinations.forEach(destination => {
+        let text = removeAccents(destination.textContent.toLowerCase());
+        if (text.includes(input)) { 
+            destination.classList.remove('hidden');
+            found = true;
+        } else {
+            destination.classList.add('hidden');
+        }
+    });
+    if (!found) {
+        window.open(`https://www.google.com/search?q=${encodeURIComponent(input)}`, "_blank");
+    }
+}
+
     </script>
         <br><br><br><br><br>
         <section class="reviews" id="danhgia">
