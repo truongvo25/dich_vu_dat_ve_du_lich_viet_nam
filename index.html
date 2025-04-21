@@ -9,6 +9,25 @@
     <title>Dịch vụ đặt vé du lịch Việt Nam</title>
     <link rel="stylesheet" href="grid.css">
     <style>
+        .member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .member p {
+            margin: 5 5;
+            width: 200px;
+        }
+        .member {
+            font-size: 19px;
+            text-align: center;
+            width: 200px;
+            border: 2px solid #000; 
+            padding: 30px; 
+            border-radius: 10px; 
+            background-color: #f0f0f0; 
+        }
         .update{
             background-color: white;
         }
@@ -20,7 +39,7 @@
         header {text-align: center; }
         nav { background-color: antiquewhite; padding: 1rem; }
         nav ul { list-style: none; display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap; }
-        nav a { color: rgba(255, 91, 1);}
+        nav a { color: rgba(255, 91, 1);text-decoration: none;}
         body {
             padding: 0;
             margin: 0;
@@ -35,6 +54,7 @@
             background-color: antiquewhite;
             top: 0;
             left: 0;
+            text-align: right;
         }
         .sticky .logo{
             width: 150px;
@@ -119,29 +139,6 @@
             font-family:'Lora', serif; 
             font-size: 20px;
         }
-
-.social-icons{
-    margin-top: 50px;
-    list-style: none;
-}
-
-.social-icons li{
-    display: inline-block;
-    font-size: 250%;
-    margin-left: 20px;
-    color: white;
-}
-
-.social-icons li i{
-    transition: all .3s;
-    cursor: pointer;
-}
-
-.social-icons li i:hover,
-.social-icons li i:active{
-    transform: scale(1.3);
-    color: #e67e22;
-}
         .clearfix::after{
             content:" ";
             display: table;
@@ -187,12 +184,36 @@
         background-image: linear-gradient(rgba(0, 0, 0, 0.13),rgba(0, 0, 0, 0.12)), url("https://cdn.pixabay.com/photo/2022/02/10/04/09/vietnam-7004572_1280.jpg");
         background-size: cover;
     }
+    .horizontal-list {
+        display: flex;
+        padding: 30px;
+        margin: 10px;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+    }
+    .horizontal-list li {
+        margin-right: 10px;
+    }
+    nav ul li a:hover {
+        color: darkred;
+    }
+nav ul li:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: darkred;
+}
+
     </style>
 </head>
 <body style="margin: 0 0 0 0;">
-    <nav class="sticky">
-        <img class="logo" src="2022-klook-new-logo-design-removebg-preview.png" alt="logo"> 
-        <ul>
+    <nav class="sticky row">
+        <img class="col span-1-of-3 logo" src="2022-klook-new-logo-design-removebg-preview.png" alt="logo"> 
+        <ul class="col span-2-of-3 horizontal-list">
             <li><a href="#vnam"></i>Tổng quan</a></li>
             <li><a href="#datve"></i>Đặt vé</a></li>
             <li><a href="#danhgia"></i>Đánh giá</a></li>
@@ -385,18 +406,32 @@
       <p style="text-align: center;color: orange;">***************************************************************************************************************</p> <br>
     <section id="lienhe">
         <div class="contact">
-            <h2 style="text-align: center; font-size: 40px;">Danh sách thành viên</h2>
-            <div class="col span-1-of-3">
-                <ul class="information">
-                    <li></i>Huỳnh Phương Bình An - 12 Toán 2</li>
-                    <li></i>Hồ Hữu Cao Tiến - 12 Toán 2</li>
-                    <li></i>Võ Vân Trường - 12 Toán 2</li>
-                    <li></i>Phan Ngọc Ngân Tú - 12 Toán 2</li>
-                </ul>
+            <h2 style="text-align: center; font-size: 40px; margin: 5px;">Danh sách thành viên</h2>
+        <div class="container">
+            <div class="member">
+                <img src="Binh An.jpg" alt="Bạn A">
+                <p><strong>Huỳnh Phương Bình An</strong></p>
+                <p>Lớp 12 Toán 2</p>
+            </div>
+            <div class="member">
+                <img src="Cao Tien.jpg" alt="Bạn B">
+                <p><strong>Hồ Hữu Cao Tiến</strong></p>
+                <p>Lớp 12 Toán 2</p>
+            </div>
+            <div class="member">
+                <img src="Van Truong.jpg" alt="Bạn C">
+                <p><strong>Võ Vân Trường</strong></p>
+                <p>Lớp 12 Toán 2</p>
+            </div>
+            <div class="member">
+                <img src="Ngan Tu.jpg" alt="Bạn D">
+                <p><strong>Phan Ngọc Ngân Tú</strong></p>
+                <p>Lớp 12 Toán 2</p>
             </div>
         </div>
+        </div>
     </section>
-        <div style="float: right">
+            <div style="float: right">
             <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
             <!-- Histats.com  START  (aync)-->
             <script type="text/javascript">var _Hasync= _Hasync|| [];
@@ -413,3 +448,4 @@
         </div>
 </body>
 </html>
+
